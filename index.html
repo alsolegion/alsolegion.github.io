@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Landing Page | Preston</title>
+    <script>
+      (function () {
+        try {
+          const savedTheme = localStorage.getItem("portfolio-theme");
+          const theme = savedTheme === "dark" ? "dark" : "light";
+          document.documentElement.setAttribute("data-theme", theme);
+          document.body?.setAttribute("data-theme", theme);
+        } catch (e) {}
+      })();
+    </script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand-mark">Preston Corpuz</span>
+          <span class="brand-subtitle">landing page</span>
+        </div>
+        <nav class="topnav" aria-label="Main navigation">
+          <a class="active" href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="resume.html">Resume</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle color theme">
+          <span class="toggle-icon">☀︎</span>
+        </button>
+      </header>
+
+      <main class="container">
+        <section class="hero-card">
+          <div class="hero-copy">
+            <p class="eyebrow">Root Directory</p>
+            <h1>Welcome to C:\Portfolio&gt;</h1>
+            <p class="hero-text">
+              Feel free to navigate through the directory tree below 
+              or the navigation bar above to explore the content.
+            </p>
+          </div>
+
+          <div class="terminal-card">
+            <div class="terminal-bar">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="terminal-output" id="terminalOutput"></div>
+            <div class="terminal-input-row">
+              <input id="terminalInput" type="text" autocomplete="off" />
+            </div>
+          </div>
+        </section>
+
+        <section class="directory-card" aria-label="Portfolio directory tree">
+          <div class="directory-header">
+            <h2>File Explorer</h2>
+            <p>Click each folder to expand the branch and jump to a section.</p>
+          </div>
+
+          <div class="tree-root">
+            <div class="tree-node">
+              <button class="folder-toggle" type="button" data-target="root-branch" aria-expanded="true">
+                <span class="folder-icon">📁</span>
+                <span>Portfolio/</span>
+              </button>
+              <div class="tree-branch" id="root-branch">
+                <div class="tree-node">
+                  <button class="folder-toggle" type="button" data-target="about-branch" aria-expanded="true">
+                    <span class="folder-icon">📁</span>
+                    <span>about/</span>
+                  </button>
+                  <div class="tree-branch" id="about-branch">
+                    <a class="tree-link" href="about.html">about-me</a>
+                    <a class="tree-link" href="resume.html">resume</a>
+                  </div>
+                </div>
+
+                <div class="tree-node">
+                  <button class="folder-toggle" type="button" data-target="projects-branch" aria-expanded="true">
+                    <span class="folder-icon">📁</span>
+                    <span>projects/</span>
+                  </button>
+                  <div class="tree-branch" id="projects-branch">
+                    <a class="tree-link" href="projects/active-directory.html">active-directory</a>
+                    <a class="tree-link" href="projects/ids-project.html">ids-project</a>
+                    <a class="tree-link" href="projects/network-labs.html">network-labs</a>
+                    <a class="tree-link" href="projects/python.html">python</a>
+                  </div>
+                </div>
+
+                <div class="tree-node">
+                  <a class="tree-link tree-link-file" href="contact.html">
+                    <span class="folder-icon">📁</span>
+                    <span>contact/</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Preston</title>
+    <script>
+      (function () {
+        try {
+          const savedTheme = localStorage.getItem("portfolio-theme");
+          const theme = savedTheme === "dark" ? "dark" : "light";
+          document.documentElement.setAttribute("data-theme", theme);
+          document.body?.setAttribute("data-theme", theme);
+        } catch (e) {}
+      })();
+    </script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand-mark">Preston Corpuz</span>
+          <span class="brand-subtitle">about</span>
+        </div>
+        <nav class="topnav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a class="active" href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="resume.html">Resume</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle color theme">
+          <span class="toggle-icon">☀︎</span>
+        </button>
+      </header>
+
+      <main class="page-content">
+        <section class="card">
+          <h1>About Me</h1>
+          <p>I am a technology-focused professional building practical solutions across networking, systems administration, and automation.</p>
+          <h2>Highlights</h2>
+          <div class="list-grid">
+            <span class="pill">Cybersecurity awareness</span>
+            <span class="pill">Active Directory administration</span>
+            <span class="pill">Network lab experience</span>
+            <span class="pill">Python and scripting</span>
+          </div>
+          <h2>Career Goals</h2>
+          <p>My goal is to continue expanding into high-impact cloud, security, and infrastructure roles while building a strong portfolio of projects.</p>
+        </section>
+      </main>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

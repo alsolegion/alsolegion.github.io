@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IDS Project | Preston</title>
+    <script>
+      (function () {
+        try {
+          const savedTheme = localStorage.getItem("portfolio-theme");
+          const theme = savedTheme === "dark" ? "dark" : "light";
+          document.documentElement.setAttribute("data-theme", theme);
+          document.body?.setAttribute("data-theme", theme);
+        } catch (e) {}
+      })();
+    </script>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand-mark">Preston Corpuz</span>
+          <span class="brand-subtitle">ids project</span>
+        </div>
+        <nav class="topnav" aria-label="Main navigation">
+          <a href="../index.html">Home</a>
+          <a href="../about.html">About</a>
+          <a class="active" href="../projects.html">Projects</a>
+          <a href="../resume.html">Resume</a>
+          <a href="../contact.html">Contact</a>
+        </nav>
+        <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle color theme">
+          <span class="toggle-icon">☀︎</span>
+        </button>
+      </header>
+
+      <main class="page-content">
+        <section class="card">
+          <p class="eyebrow">Capstone Project</p>
+          <h1>Intrusion Detection with Snort and SIEM</h1>
+          <div class="card-subsection">
+            <h2>Overview</h2>
+              Designed and implemented an intrusion detection system using Snort and Splunk to monitor network traffic,
+            detect suspicious activity, and visualize security events. For this capstone project, proper documentation,
+            testing, and collaboration were critical throughout the process.
+          </p>
+          </div>
+
+          <div class="card-subsection">
+            <h2>Project Role</h2>
+            <p>Preston C. | Project Manager &amp; Technical Contributor</p>
+            <p>
+              Worked on the planning, documentation, and technical implementation of an intrusion detection system using
+              Snort and Splunk. Managed project documentation, coordinated team meetings, and helped maintain project
+              requirements and deliverables. Contributed to the technical setup and configuration of the virtual
+              environment, including VM deployment, RDP configuration, Snort rule tuning, and Splunk integration for
+              security event monitoring and analysis.
+            </p>
+          </div>
+
+          <div class="card-subsection">
+            <h2>Technologies Used</h2>
+            <ul class="tech-list">
+              <li><strong>Operating Systems:</strong> Windows 10, Windows Server 2022, Kali Linux</li>
+              <li><strong>Security:</strong> Snort (IDS), Splunk (SIEM)</li>
+              <li><strong>Virtualization:</strong> VirtualBox</li>
+              <li><strong>Networking:</strong> TCP/IP, FTP</li>
+            </ul>
+          </div>
+
+          <div class="card-subsection">
+            <h2>Architecture Diagram</h2>
+            <p>The following diagram illustrates the architecture of the intrusion detection system:</p>
+            <div class="diagram-card">
+              <img src="../assets/images/diagram.png" alt="IDS architecture diagram placeholder" />
+            </div>
+          </div>
+
+          <div class="card-subsection">
+            <h2>Project Documentation</h2>
+            <p>
+              The following documents provide additional detail about the project, including design, implementation,
+              testing, configuration, and overall functionality.
+            </p>
+            <div class="doc-grid">
+              <a class="doc-card" href="https://docs.google.com/document/d/1KlhxH6zqyXU5VumZqXTfBDKHuP3i7x0X/edit?usp=drive_link&ouid=103851967718441050309&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer">Product Guide</a>
+              <a class="doc-card" href="https://docs.google.com/document/d/19S1P6Dam0CWEzI_TqVdfFoEkOlbQVD63/edit?usp=sharing&ouid=103851967718441050309&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer">Research Paper</a>
+              <a class="doc-card" href="https://docs.google.com/presentation/d/1Bq9oLivXNk6ODb1c7ripf_0f-JoHEv_m/edit?usp=drive_link&ouid=103851967718441050309&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer">Final Presentation</a>
+              <a class="doc-card" href="https://docs.google.com/spreadsheets/d/1xXVS3qCNrIcxYt0wBhP36BuRl_DXP4D9/edit?usp=drive_link&ouid=103851967718441050309&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer">Test Cases</a>
+              <a class="doc-card" href="https://docs.google.com/spreadsheets/d/1Oy1b6G7FvL_DBjG4vDgFVcbAUrw94Is4/edit?usp=drive_link&ouid=103851967718441050309&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer">VM Specifications</a>
+            </div>
+            <p class="doc-footnote">
+              <strong>Additional Resources:</strong>
+            </p>
+            <div class="doc-grid">
+              <a class="doc-card" href="https://drive.google.com/drive/folders/1SXDZ9XXFSA8BvgiZe9f7-AcTwj_VwvFg?usp=drive_link" target="_blank" rel="noopener noreferrer">Status Reports</a>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

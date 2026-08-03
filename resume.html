@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume | Preston</title>
+    <script>
+      (function () {
+        try {
+          const savedTheme = localStorage.getItem("portfolio-theme");
+          const theme = savedTheme === "dark" ? "dark" : "light";
+          document.documentElement.setAttribute("data-theme", theme);
+          document.body?.setAttribute("data-theme", theme);
+        } catch (e) {}
+      })();
+    </script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand-mark">Preston Corpuz</span>
+          <span class="brand-subtitle">resume</span>
+        </div>
+        <nav class="topnav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a class="active" href="resume.html">Resume</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle color theme">
+          <span class="toggle-icon">☀︎</span>
+        </button>
+      </header>
+
+      <main class="page-content">
+        <section class="card">
+          <h1>Resume</h1>
+          <p>View my resume directly below. If you prefer, you can also open the PDF in a new tab.</p>
+          <div class="resume-actions">
+            <a class="btn btn-primary" href="assets/documents/Resume2.pdf" target="_blank" rel="noopener noreferrer">Open PDF in New Tab</a>
+          </div>
+          <div class="resume-embed">
+            <iframe src="assets/documents/Resume2.pdf" title="Resume PDF"></iframe>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
