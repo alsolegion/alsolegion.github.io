@@ -397,13 +397,97 @@ body {
   border: 1px solid var(--border-dark);
 }
 
-@media (max-width: 860px) {
-  .hero-card {
-    grid-template-columns: 1fr;
+img,
+iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 900px) {
+  .page-shell {
+    padding: 12px;
   }
 
   .topbar {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .topnav {
+    width: 100%;
+  }
+
+  .hero-card {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    margin-top: 16px;
+  }
+
+  .page-content {
+    padding: 16px 0 32px;
+  }
+
+  .resume-embed iframe {
+    min-height: 600px;
+  }
+}
+
+@media (max-width: 600px) {
+  .page-shell {
+    padding: 8px;
+  }
+
+  .topbar {
+    padding: 10px;
+  }
+
+  .topnav {
+    gap: 6px;
+  }
+
+  .topnav a {
+    font-size: 0.85rem;
+    padding: 7px 9px;
+  }
+
+  .hero-copy h1 {
+    font-size: 1.45rem;
+  }
+
+  .hero-text,
+  .card p,
+  .card li {
+    font-size: 0.95rem;
+  }
+
+  .card,
+  .hero-card,
+  .directory-card {
+    padding: 12px;
+  }
+
+  .tree-root {
+    padding-left: 0;
+  }
+
+  .tree-branch {
+    margin-left: 12px;
+    padding-left: 8px;
+  }
+
+  .doc-grid {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .doc-card {
+    width: 100%;
+    text-align: center;
+  }
+
+  .resume-embed iframe {
+    min-height: 460px;
   }
 }
