@@ -172,6 +172,53 @@ body {
   color: #ffffff;
 }
 
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.project-card {
+  background: var(--panel-2);
+  border: 1px solid var(--border-dark);
+  box-shadow: var(--shadow);
+  padding: 16px;
+}
+
+.project-card h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.project-item-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.project-item-list li {
+  background: var(--panel);
+  border: 1px solid var(--border-dark);
+  padding: 10px 12px;
+}
+
+.project-item-list li a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.project-item-list li a:hover {
+  text-decoration: underline;
+}
+
+.project-item-list li.disabled {
+  opacity: 0.65;
+  color: var(--muted);
+}
+
 .terminal-card {
   background: #000000;
   border: 2px solid #ffffff;
@@ -298,6 +345,12 @@ body {
   color: var(--accent);
 }
 
+.tree-link-disabled {
+  color: var(--muted);
+  opacity: 0.75;
+  cursor: default;
+}
+
 .page-content {
   max-width: 860px;
   margin: 0 auto;
@@ -395,6 +448,73 @@ body {
   background: var(--panel-2);
   color: var(--text);
   border: 1px solid var(--border-dark);
+}
+
+.cert-grid {
+  display: grid;
+  gap: 16px;
+  margin-top: 14px;
+}
+
+.cert-card {
+  background: var(--panel-2);
+  border: 1px solid var(--border-dark);
+  box-shadow: var(--shadow);
+  padding: 14px;
+  display: grid;
+  gap: 10px;
+}
+
+.cert-card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.cert-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: var(--panel);
+  border: 1px solid var(--border-dark);
+  border-radius: 8px;
+  font-size: 1.2rem;
+}
+
+.cert-card h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.cert-organization {
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.cert-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.cert-meta {
+  display: grid;
+  gap: 6px;
+  font-size: 0.92rem;
+}
+
+.cert-meta a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.cert-meta a:hover {
+  text-decoration: underline;
 }
 
 img,

@@ -5,14 +5,14 @@ This repository contains the source files for my personal portfolio website. The
 ## About
 
 This website is designed to showcase:
-- information about me
-- my projects and case studies
-- my resume
-- ways to contact me
+- About Me
+- My projects and documentation
+- My Resume
+- Contact Information / Profile
 
 ## Pages
 
-The site includes the following pages:
+The site includes the following main pages:
 - Home page
 - About page
 - Projects page
@@ -30,8 +30,17 @@ The site includes the following pages:
 
 - assets/css/style.css — shared site styling
 - assets/js/main.js — interactive behavior and theme handling
-- projects/ — project-specific pages
-- assets/documents/ — downloadable documents such as the resume
+- assets/documents/ — downloadable documents seen within pages (i.e. resume)
+- index.html — landing page with the directory-style file explorer
+- about.html — about me page
+- projects.html — projects landing page
+- resume.html — embedded resume page
+- contact.html — contact information page
+- projects/
+  - ids-project.html — Intrusion Detection System project page
+  - client-server-communication.html — Client-Server Communication project page
+  - network-labs.html — currently listed as WIP in the site
+  - active-directory.html — currently listed as WIP in the site
 
 ## Run Locally
 

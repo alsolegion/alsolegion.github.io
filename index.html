@@ -89,10 +89,45 @@
                     <span>projects/</span>
                   </button>
                   <div class="tree-branch" id="projects-branch">
-                    <a class="tree-link" href="projects/active-directory.html">active-directory</a>
-                    <a class="tree-link" href="projects/ids-project.html">ids-project</a>
-                    <a class="tree-link" href="projects/network-labs.html">network-labs</a>
-                    <a class="tree-link" href="projects/python.html">python</a>
+                    <div class="tree-node">
+                      <button class="folder-toggle" type="button" data-target="cyber-branch" aria-expanded="true">
+                        <span class="folder-icon">📁</span>
+                        <span>Cybersecurity/</span>
+                      </button>
+                      <div class="tree-branch" id="cyber-branch">
+                        <a class="tree-link" href="projects/ids-project.html">Intrusion Detection System</a>
+                      </div>
+                    </div>
+
+                    <div class="tree-node">
+                      <button class="folder-toggle" type="button" data-target="networking-branch" aria-expanded="true">
+                        <span class="folder-icon">📁</span>
+                        <span>Networking/</span>
+                      </button>
+                      <div class="tree-branch" id="networking-branch">
+                        <span class="tree-link tree-link-disabled">Cisco Networking Labs (WIP) </span>
+                      </div>
+                    </div>
+
+                    <div class="tree-node">
+                      <button class="folder-toggle" type="button" data-target="systems-branch" aria-expanded="true">
+                        <span class="folder-icon">📁</span>
+                        <span>Systems Administration/</span>
+                      </button>
+                      <div class="tree-branch" id="systems-branch">
+                        <span class="tree-link tree-link-disabled">Active Directory Lab (WIP)</span>
+                      </div>
+                    </div>
+
+                    <div class="tree-node">
+                      <button class="folder-toggle" type="button" data-target="programming-branch" aria-expanded="true">
+                        <span class="folder-icon">📁</span>
+                        <span>Programming/</span>
+                      </button>
+                      <div class="tree-branch" id="programming-branch">
+                        <a class="tree-link" href="projects/client-server-communication.html">Client-Server Communication Project (Python)</a>
+                      </div>
+                    </div>
                   </div>
                 </div>
 

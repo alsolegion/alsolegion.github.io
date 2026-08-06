@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Client Server Communication | Preston</title>
+    <script>
+      (function () {
+        try {
+          const savedTheme = localStorage.getItem("portfolio-theme");
+          const theme = savedTheme === "dark" ? "dark" : "light";
+          document.documentElement.setAttribute("data-theme", theme);
+          document.body?.setAttribute("data-theme", theme);
+        } catch (e) {}
+      })();
+    </script>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand-mark">Preston Corpuz</span>
+          <span class="brand-subtitle">client server communication</span>
+        </div>
+        <nav class="topnav" aria-label="Main navigation">
+          <a href="../index.html">Home</a>
+          <a href="../about.html">About</a>
+          <a class="active" href="../projects.html">Projects</a>
+          <a href="../resume.html">Resume</a>
+          <a href="../contact.html">Contact</a>
+        </nav>
+        <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle color theme">
+          <span class="toggle-icon">☀︎</span>
+        </button>
+      </header>
+
+      <main class="page-content">
+        <section class="card">
+          <p class="eyebrow">Python Project</p>
+          <h1>Client Server Communication</h1>
+
+          <div class="card-subsection">
+            <h2>Overview</h2>
+            <p>Developed a client-server communication application using Python to demonstrate interprocess communication and concurrent server management. The project implements socket-based communication between clients and servers while utilizing multithreading to support multiple simultaneous client connections. Linux tools such as top were used to monitor thread activity and analyze system behavior.</p>
+          </div>
+
+          <div class="card-subsection">
+            <h2>Source Code</h2>
+            <p>View the project repository for the Python source files and implementation details.</p>
+            <div class="doc-grid">
+              <a class="doc-card" href="https://github.com/alsolegion/IPC_Project" target="_blank" rel="noopener noreferrer">View Repository</a>
+            </div>
+          </div>
+
+          <div class="card-subsection">
+            <h2>Technologies Used</h2>
+            <ul class="tech-list">
+              <li><strong>Operating Systems:</strong> Windows 11, Windows Subsystem for Linux (WSL)</li>
+              <li><strong>Programming:</strong> Python, Socket Programming, Threading Module, Multi-threading, Thread Synchronization (Mutex Locks)</li>
+              <li><strong>Networking:</strong> Client-Server Architecture, Interprocess Communication (IPC)</li>
+              <li><strong>System Tools:</strong> Linux Command Line, top (Process Monitoring), strace (System Call Analysis)</li>
+            </ul>
+          </div>
+
+          <div class="card-subsection">
+            <h2>Architecture Diagram</h2>
+            <p>The following diagram illustrates the model of the two programs:</p>
+            <div class="diagram-card">
+              <img src="../assets/images/IPC_Model.png" alt="Client Server Communication architecture diagram placeholder" />
+            </div>
+          </div>
+
+          <div class="card-subsection">
+            <h2>Video Demonstration</h2>
+            <p>Watch a demonstration of the client-server application in action.</p>
+            <div class="resume-embed">
+              <iframe src="https://www.youtube.com/embed/INsoKeJqtMI" title="Client Server Communication Demo" allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <div class="card-subsection">
+            <h2>Project Documentation</h2>
+            <p>The following provides additional details about the project:</p>
+            <div class="doc-grid">
+              <a class="doc-card" href="https://docs.google.com/document/d/17cuKVdkL9hvspQL2bbxF4XPTVTVe1h3I/edit?usp=drive_link&ouid=103851967718441050309&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer">Final Paper</a>
+              <a class="doc-card" href="https://docs.google.com/presentation/d/1kLJe36a1iwRA4n2_0AXiWlQS0zSL2eL2/edit?usp=drive_link&ouid=103851967718441050309&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer">IPC Presentation</a>
+              <a class="doc-card" href="https://docs.google.com/document/d/12bbXajC6ORZZUghPEudgCkwi9FO4vv_H/edit?usp=drive_link&ouid=103851967718441050309&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer">Software Design</a>
+              <a class="doc-card" href="https://docs.google.com/spreadsheets/d/1t1n6cpukfFdkTQlD_DmxV_bJDPQXDY7V/edit?usp=drive_link&ouid=103851967718441050309&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer">Test Cases</a>
+              <a class="doc-card" href="https://docs.google.com/document/d/1F6Doaff9izIJVlMIT51JqebIfLzh3l5H/edit?usp=drive_link&ouid=103851967718441050309&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer">Status Report</a>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>
